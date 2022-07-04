@@ -14,5 +14,5 @@ class Solution(object):
             start += 1
 
 new = Solution()
-print(new.twoSum([2,3,4],5))
+print(new.twoSum([1,2,3,4],5))
 
