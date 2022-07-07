@@ -1,13 +1,17 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        prefix = [1]
-        suffix = [1, nums[-1]]
-        for i, num in enumerate(nums):
-            prefix.append(prefix[-1] * num)
+        output = [1]
+        suffix = 1
+        for num in nums:
+            output.append(output[-1] * num)
+        output[-1] = 1
+        
+        for i, num in enumerate(nums, start=1):
             try:
-                suffix.append(suffix[-1] * nums[-(i+2)])
+                output[-i] = output[-i-1] * suffix 
+                suffix *= nums[-i]
             except:
-                suffix.pop()
+                continue
 
-        return [prefix[i] * suffix[-i-1] for i, num in enumerate(nums)]
+        return output[1:]
         
