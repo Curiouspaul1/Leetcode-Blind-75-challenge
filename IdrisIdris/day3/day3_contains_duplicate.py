@@ -1,3 +1,6 @@
+from ast import List
+
+
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         numSet = set(nums)

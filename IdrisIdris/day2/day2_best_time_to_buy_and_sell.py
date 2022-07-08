@@ -1,3 +1,6 @@
+from ast import List
+
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         left, right = 0, 1
