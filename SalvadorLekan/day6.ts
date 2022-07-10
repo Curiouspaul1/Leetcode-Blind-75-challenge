@@ -29,11 +29,11 @@ function maxProduct(nums: number[]): number {
   return max;
 }
 
-// console.assert(maxProduct([2, 3, -2, 4]) === 6);
-// console.assert(maxProduct([-2, 0, -1]) === 0);
-// console.assert(maxProduct([-2, 3, -4]) === 24);
-// console.assert(maxProduct([-2, 3, -4, -5]) === 60);
-// console.assert(maxProduct([-20, 3, -4, -5]) === 240);
-// console.assert(maxProduct([-2, 3, -4, -5, -6]) === 720);
-// console.assert(maxProduct([0, 2]) === 2);
+console.assert(maxProduct([2, 3, -2, 4]) === 6);
+console.assert(maxProduct([-2, 0, -1]) === 0);
+console.assert(maxProduct([-2, 3, -4]) === 24);
+console.assert(maxProduct([-2, 3, -4, -5]) === 60);
+console.assert(maxProduct([-20, 3, -4, -5]) === 240);
+console.assert(maxProduct([-2, 3, -4, -5, -6]) === 720);
+console.assert(maxProduct([0, 2]) === 2);
 console.assert(maxProduct([-3, -1, 3, 5, -6, -6, -1, 6, -3, -5, 1, 0, -6, -5, 0, -2, 6, 1, 0, 5]) === 48600);
