@@ -19,6 +19,7 @@ function binarySearch(arr, target) {
   let end = arr.length - 1;
   while (start <= end) {
     let mid = Math.floor((start + end) / 2);
+    console.log(mid);
     if (arr[mid][0] === target) {
       return mid;
     } else if (arr[mid][0] > target) {
@@ -31,7 +32,7 @@ function binarySearch(arr, target) {
 }
 
 console.log(
-  findRightInterval([
+  binarySearch([
     [1, 4],
     [2, 3],
     [3, 4],

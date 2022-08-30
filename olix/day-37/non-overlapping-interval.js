@@ -4,6 +4,7 @@
  */
 var eraseOverlapIntervals = function (intervals) {
   intervals = intervals.sort((a, b) => a[0] - b[0]);
+  console.log(intervals);
   let count = 0;
   let endInterval = intervals[0][1];
 
@@ -13,6 +14,7 @@ var eraseOverlapIntervals = function (intervals) {
       count++;
       endInterval = Math.min(endInterval, interval[1]);
     } else {
+      // Hello Boss
       endInterval = interval[1];
     }
   }
