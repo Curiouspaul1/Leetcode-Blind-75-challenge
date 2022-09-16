@@ -17,7 +17,7 @@ class Solution:
         while i < len(s) and j < len(s):
             count_s[s[j]] += 1
             
-            if s[j] in count_t and count_s[s[j]] == count_t[s[j]]:
+            if count_s[s[j]] == count_t[s[j]]:
                 have += 1
             
             while have == need:
