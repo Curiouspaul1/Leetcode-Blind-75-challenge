@@ -6,5 +6,5 @@ class Solution:
 
         for i in t:
             count_s[i] -= 1  
-        return all(map(lambda i: i==0, count_s.values()))
+        return all(i==0 for i in count_s.values())
     
