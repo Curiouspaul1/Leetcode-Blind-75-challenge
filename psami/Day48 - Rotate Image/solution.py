@@ -12,4 +12,3 @@ class Solution:
         for r in range(ROWS):
             for c in range(ROWS):
                 matrix[c][ROWS-r-1] = new[r][c]
-                
